@@ -111,7 +111,7 @@ const createScene = async (engine) => {
         );
 
         // 加载新模型
-        BABYLON.SceneLoader.ImportMesh("", "https://robertxr.github.io/Babylonjs-Test/models/", fileName, scene, (newMeshes) => {
+        BABYLON.SceneLoader.ImportMesh("", "https://robertxr.github.io/MedicalModelDisplay-WebXR/models/", fileName, scene, (newMeshes) => {
             currentModel = newMeshes[0];
 
             // 创建并应用材质
@@ -170,7 +170,7 @@ const createScene = async (engine) => {
     // 加载可用模型并填充文件选择器
     const loadAvailableModels = async () => {
         try {
-            const response = await fetch('https://robertxr.github.io/Babylonjs-Test/models/modelList.json');
+            const response = await fetch('https://robertxr.github.io/MedicalModelDisplay-WebXR/models/modelList.json');
             if (!response.ok) {
                 throw new Error(`Failed to fetch models: ${response.statusText}`);
             }
