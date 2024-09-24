@@ -10,15 +10,15 @@ Website：[Medical Model Display](https://robertxr.github.io/MedicalModelDisplay
 4. The VR device can be controlled by the handle knob to move the virtual camera position
 
 ## Results
-Tested: 
-- PC（Edge Browser）
-- Phone（Edge Browser）
-- Pico(Pico Browser)
-- HoloLens 2（Edge Browser）
+1. Tested: 
+   - PC（Edge Browser）
+   - Phone（Edge Browser）
+   - Pico (Pico Browser)
+   - HoloLens 2（Edge Browser）
 
-PC - Edge Browser
+2. PC - Edge Browser
 ![PC](docs/PC_Web.png)
 
-VR device - Pico Browser
+3. VR device - Pico Browser
 ![Pico](docs/Pico_Web1.jpeg)
 ![Pico](docs/Pico_Web2.jpeg)
