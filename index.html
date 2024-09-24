@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"></meta>
+        <title>Demo</title>
+        <script src="https://cdn.babylonjs.com/babylon.js"></script>
+        <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+        <script src="https://cdn.babylonjs.com/gui/babylon.gui.min.js"></script>
+        <script src="scene.js"></script>
+        <style>
+            body, #renderCanvas {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="renderCanvas"></canvas>
+        <script type="text/javascript">
+            const canvas = document.getElementById("renderCanvas");
+            const engine = new BABYLON.Engine(canvas, true);
+            
+            createScene(engine).then(sceneToRender => {
+                engine.runRenderLoop(() => sceneToRender.render());
+            });
+
+            window.addEventListener("resize", function() {
+                engine.resize();
+            });
+        </script>
+    </body>
+</html>
